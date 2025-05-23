@@ -1,0 +1,64 @@
+.contact {
+    padding: 160px 0 155px;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 45px 0;
+    }
+
+}
+
+.contact__content {
+    display: flex;
+    gap: 228px;
+    align-items: center;
+
+    @media (max-width: $breakpoint-xl) {
+        gap: 161px;
+        justify-content: center;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        display: block;
+    }
+}
+
+.contact__information {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact__location {
+    padding-bottom: 16px;
+}
+
+.contact__mail {
+    padding-bottom: 40px;
+}
+
+.contact__group {
+    h2 {
+        padding-bottom: 40px;
+    }
+
+    p {
+        color: $light-secondary;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 60px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+        padding: 60px 0;
+    }
+}
+
+.contact__image {
+    @media (max-width: $breakpoint-lg) {
+        img {
+            width: 100%;
+        }
+    }
+}

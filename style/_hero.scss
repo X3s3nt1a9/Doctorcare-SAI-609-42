@@ -1,0 +1,129 @@
+.hero {
+    padding: 32px 0 50px;
+    background-color: $light-primary;
+    position: relative;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 32px 0 270px;
+    }
+}
+
+.hero__group {
+    margin-top: 45px;
+
+    p {
+        color: $light-secondary;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0;
+    }
+
+    button {
+        @media (max-width: $breakpoint-lg) {
+            margin-left: 200px;
+        }
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+    @media (max-width: $breakpoint-sm) {
+        width: 40vh;
+        margin: 0 auto;
+    }
+}
+
+.hero__image {
+    margin-top: -30px;
+    margin-right: 43px;
+
+    @media (max-width: $breakpoint-lg) {
+        margin-top: 10px;
+        margin-right: 6px;
+    }
+}
+
+.hero__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 85px;
+
+    @media (max-width: $breakpoint-lg) {
+        display: block;
+        text-align: center;
+    }
+
+    button {
+        margin-top: 32px;
+
+        @media (max-width: $breakpoint-xl) {
+            margin-top: 17px
+        }
+    }
+}
+
+.hero__numbers {
+    display: flex;
+    top: 496px;
+    gap: 111px;
+    border: 1px solid $light-primary;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    background: $light;
+    padding: 60px 113px;
+    text-align: center;
+
+
+    p {
+        margin-top: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0;
+        color: $primary;
+    }
+
+    @media (max-width: $breakpoint-xl) {
+        padding: 60px 63px;
+        gap: 80px;
+        top:548px;
+        position: absolute;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        display: block;
+        top: 929px;
+        left: auto;
+        margin-left: 150px;
+        padding: 50px 130px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        top: 860px;
+        left: auto;
+        margin-left: 60px;
+        padding: 50px 130px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        top: 950px;
+        left: auto;
+        margin-left: 65px;
+        padding: 50px 130px;
+    }
+
+}
+
+.hero__numbers-borderline {
+    border-right: $primary 1px solid;
+    padding: 0 111px;
+    border-left: $primary 1px solid;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 50px 0px;
+        border-left: 0;
+        border-right: 0;
+    }
+}

@@ -1,0 +1,104 @@
+.mobile-navigation {
+    display: none;
+   
+
+    @media (max-width: $breakpoint-lg) {
+        display: block;
+    }
+    
+    .mobile-navigation__wrap{
+        background-color: $primary;
+    }
+
+    .icon_menu-open {
+        display: flex;
+    }
+
+    .icon_menu-close {
+        display: none;
+    }
+
+    .mobile-navigation__header {
+        padding: 14px 0;
+    }
+
+    .mobile-navigation__content {
+        display: none;
+        padding: 10px 0 32px;
+        text-align: center;
+        margin: 0 auto;
+        transition: 300ms;
+
+        a{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: $light;
+        }
+
+        .navigation__list {
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap:48px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .navigation__button {
+            flex-direction: column;
+            button{
+                padding: 16px 20px;
+            }
+        }
+    }
+    
+    &.opened { 
+        height: 100vh;
+        background-color: rgba(0,0,0,0.3);
+        transition: 300ms;
+
+        .mobile-navigation__wrap{
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .icon_menu-open {
+            display: none;
+        }
+
+        .icon_menu-close {
+            display: block;
+        }
+
+        .mobile-navigation__content {
+            display: block;
+        }
+    }
+}
+
+.mobile-navigation__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_light-sm{
+    margin-top: 48px;
+    font-size: 18px;
+    color:$primary;
+    line-height: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding:16px 32px;
+    border-radius: 40px;
+    background-color: $white;
+}
+
+.navigation__item-social{
+    display:flex;
+    justify-content: center;
+    margin-top:80px ;
+    gap:32px;
+}

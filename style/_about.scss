@@ -1,0 +1,80 @@
+.about {
+    background: $light;
+    padding: 160px 0 155px;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 100px 0;
+    }
+}
+
+.about__content {
+    display: flex;
+
+    @media (max-width: $breakpoint-lg) {
+        display: block;
+        text-align: start;
+        position: relative;
+        padding:25px 0 700px;
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: 40%;
+        }
+    }
+
+
+    @media (max-width: $breakpoint-md) {
+        position: relative;
+        padding:40px 0 600px;
+
+        img {
+            position: absolute;
+            top: 50%;
+        }
+    }
+}
+
+.about__group {
+    padding-left: 67px;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 0;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+        justify-content: center;
+
+    }
+}
+
+// .about__image{
+/* mix-blend-mode: color ; КАК ЭТО СДЕЛАТЬ*/
+/* background-color:rgba(0, 133, 111, 0.15); */
+// }
+
+.about__tittle {
+    width: 50vh;
+    h2 {
+        padding-top: 10px;
+    }
+
+    p {
+        align-items: center;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-size: 14px;
+        font-weight: 700;
+        color: $primary;
+    }
+}
+
+.about__text p {
+    padding-top: 24px;
+    font-weight: 400;
+    color: $light-secondary;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+}
