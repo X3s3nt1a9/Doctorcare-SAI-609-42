@@ -134,27 +134,29 @@ a {
         background: $dark-primary;
         border-color: $dark-primary;
     }
+
     @media (max-width: $breakpoint-md) {
         width: 100%;
         justify-content: center;
     }
 }
 
-.button_alternative{
+.button_alternative {
     font-weight: 700;
-    color:$white;
+    color: $white;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
     border: 1px solid $white;
     border-radius: 40px;
-    padding:10px 24px;
+    padding: 10px 24px;
+
     &:hover {
         transform: scale(1.1);
         transition: 200ms;
         background: $white;
-        color:$primary
+        color: $primary
     }
 }
 
@@ -165,7 +167,8 @@ h1 {
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 1.5px;
-    @media (max-width: $breakpoint-md){
+
+    @media (max-width: $breakpoint-md) {
         font-size: 32px;
         letter-spacing: 0;
     }

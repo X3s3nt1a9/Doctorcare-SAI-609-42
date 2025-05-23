@@ -301,6 +301,10 @@ h5 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.hidden {
+  transition: 2s;
+}
+
 .mobile-navigation {
   display: none;
 }
@@ -428,7 +432,7 @@ h5 {
 }
 @media (max-width: 576px) {
   .hero__group {
-    width: 40vh;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -441,6 +445,11 @@ h5 {
   .hero__image {
     margin-top: 10px;
     margin-right: 6px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__image img {
+    width: 100%;
   }
 }
 
@@ -489,32 +498,31 @@ h5 {
     padding: 60px 63px;
     gap: 80px;
     top: 548px;
-    position: absolute;
   }
 }
 @media (max-width: 992px) {
   .hero__numbers {
     display: block;
     top: 929px;
-    left: auto;
-    margin-left: 150px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 50px 130px;
   }
 }
 @media (max-width: 768px) {
   .hero__numbers {
     top: 860px;
-    left: auto;
-    margin-left: 60px;
-    padding: 50px 130px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 576px) {
   .hero__numbers {
-    top: 950px;
-    left: auto;
-    margin-left: 65px;
-    padding: 50px 130px;
+    top: 74%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 17px;
+    width: 100%;
   }
 }
 
@@ -621,25 +629,19 @@ h5 {
 }
 @media (max-width: 992px) {
   .about__content {
-    display: block;
+    display: flex;
     text-align: start;
-    position: relative;
-    padding: 25px 0 700px;
+    padding: 25px 0 5%;
+    flex-direction: column-reverse;
   }
   .about__content img {
     width: 100%;
-    position: absolute;
-    top: 40%;
+    margin-top: 60px;
   }
 }
 @media (max-width: 768px) {
   .about__content {
-    position: relative;
-    padding: 40px 0 600px;
-  }
-  .about__content img {
-    position: absolute;
-    top: 50%;
+    padding: 40px 0 8%;
   }
 }
 
@@ -661,7 +663,7 @@ h5 {
 /* mix-blend-mode: color ; КАК ЭТО СДЕЛАТЬ*/
 /* background-color:rgba(0, 133, 111, 0.15); */
 .about__tittle {
-  width: 50vh;
+  width: 77%;
 }
 .about__tittle h2 {
   padding-top: 10px;
@@ -673,6 +675,26 @@ h5 {
   font-size: 14px;
   font-weight: 700;
   color: #00856F;
+}
+@media (max-width: 1230px) {
+  .about__tittle {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .about__tittle {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .about__tittle {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .about__tittle {
+    width: 80%;
+  }
 }
 
 .about__text p {
@@ -751,6 +773,11 @@ h5 {
 .footer {
   background: #00856F;
   padding: 82px;
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 60px 24px;
+  }
 }
 
 .footer__copyright {

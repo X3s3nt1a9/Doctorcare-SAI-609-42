@@ -1,6 +1,7 @@
 .service {
     background: $gray;
     padding: 0 0 96px;
+
     @media (max-width: $breakpoint-lg) {
         padding: 0 0 40px;
     }
@@ -32,10 +33,12 @@
     grid-template-columns: repeat(3, 347px);
     column-gap: 40px;
     row-gap: 40px;
+
     @media (max-width: $breakpoint-xl) {
         grid-template-columns: repeat(2, 347px);
         justify-content: center;
     }
+
     @media (max-width: $breakpoint-md) {
         grid-template-columns: repeat(1, 100%);
         justify-content: center;

@@ -10,13 +10,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img{
+
+    img {
         transition: 200ms;
     }
-    img:hover{
+
+    img:hover {
         transform: scale(1.1);
         transition: 200ms;
     }
+
     @media (max-width: $breakpoint-lg) {
         display: none;
     }
@@ -58,11 +61,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    img{
+
+    img {
         transition: 200ms;
     }
-    img:hover{
+
+    img:hover {
         transform: scale(1.1);
         transition: 200ms;
     }
@@ -97,6 +101,6 @@
     color: $white-secondary;
 }
 
-.hidden{
+.hidden {
     transition: 2s;
 }

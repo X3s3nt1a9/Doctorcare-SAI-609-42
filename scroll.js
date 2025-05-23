@@ -13,3 +13,4 @@ function changeNavigationOnScroll() {
 }
 
 window.addEventListener('scroll', changeNavigationOnScroll);
+
